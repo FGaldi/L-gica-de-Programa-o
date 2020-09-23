@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int ID, q;
+    double p;
+    scanf("%i %i", &ID,&q);
+    
+    if(ID == 1){
+        p = 4.00;
+    }
+    if(ID == 2){
+        p = 4.50;
+    }
+    if(ID == 3){
+        p = 5.00;
+    }
+    if(ID == 4){
+        p = 2.00;
+    }
+    if(ID == 5){
+        p = 1.50;
+    }
+    
+    printf("Total: R$ %.2lf\n", p*q);
+    
+    
+    return 0;
+}
