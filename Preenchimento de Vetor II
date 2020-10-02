@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+int main (){
+    int i;
+    int N[1000];
+    int T;
+
+    scanf("%i", &T);
+
+
+    for(i = 0; i < 1000; i++){
+        N[i] = i%T;
+    }
+
+    for(i = 0; i < 1000; i++)
+        printf("N[%i] = %i\n", i, N[i]);
+
+    return 0;
+
+}
