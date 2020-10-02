@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+int main (){
+    double m[12][12];
+    double s = 0;
+    int i, j;
+    char op[5];
+    
+    scanf("%s", &op);
+
+
+    for(i = 0; i < 12; i++)
+        for(j = 0 ; j < 12; j++)
+        scanf("%lf", &m[i][j]);
+
+    for(i = 0; i <= 4; i++){
+        for(j = i+1; j<=10 - i; j++)
+        s += m[i][j];
+    }
+
+    if(op[0] == 'M') s = s/( (144-12-12)/4);
+    printf("%.1lf\n", s);
+
+
+    return 0;
+
+}
