@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main (){
+    int n;
+    int impar;
+    scanf("%i", &n);
+    impar = 0;
+    
+    while(impar < 6){
+        if(n % 2 != 0){
+            printf("%i\n", n);
+            impar++;
+        }
+        n++;
+    }
+    
+    return 0;
+}
