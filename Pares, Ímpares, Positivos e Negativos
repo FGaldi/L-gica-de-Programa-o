@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main (){
+    int impar, par , negativo, positivo;
+    int v;
+    int i;
+    
+    impar = par = negativo = positivo = 0;
+    i = 1;
+    while( i <= 5 ){
+        scanf("%i", &v);
+        if(v % 2 == 0) par++;
+        if(v % 2 == 1) impar++;
+        if(v > 0) positivo++;
+        if(v < 0) negativo++;
+        i++;
+        
+    }
+    
+    printf("%i valor(es) par(es)\n", par);
+    printf("%i valor(es) impar(es)\n", impar );
+    printf("%i valor(es) positivo(s)\n", positivo);
+    printf("%i valor(es) negativo(s)\n", negativo);
+    
+    return 0;
+}
